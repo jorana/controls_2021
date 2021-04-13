@@ -24,7 +24,7 @@ The material is divided into 6 notebooks that you should work through in sequenc
  * **student4a_racing.ipynb**: To find out if the controls are fit for purpose: race your drone through a track and compare your time with others!
  * **student4b_racing_noninteractive.ipynb**: This is a non-interactive version of the race (which is a bit more difficult).
 
-### <a name="colab"></a> Running the notebooks in Google Colab
+## <a name="colab"></a> Running the notebooks in Google Colab
 
 If you cannot install Python and Jupyter on your own computer, you can run some of the provided notebooks online, using the Google Colab project. You will need a Google account to save your work to Google Drive.
 
@@ -33,15 +33,16 @@ You cannot run the following notebooks because Colab does not provide the QT int
  - student4a_racing.ipynb
 
 The following notebooks will work:
+- student0_example_notebook.ipynb
 - student2_system_identification.ipynb
 - student3_basic_control.ipynb
 - student4_advanced_control.ipynb
 - student4b_racing_noninteractive.ipynb
 
-You must add a new code cell at the top of each notebook and add (and execute) this command:
+However, you must add a new code cell at the top of each notebook and add (and execute) this command:
 
 ```!wget https://raw.githubusercontent.com/freise/controls_2021/main/module.py```
 
-Do do that follow the link to open one of the notebooks in Google Colab:
+Follow this link to open one of the notebooks in Google Colab:
 
 https://colab.research.google.com/github/freise/controls_2021/
