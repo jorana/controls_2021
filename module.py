@@ -12,6 +12,7 @@ import matplotlib.transforms as trafo
 from matplotlib.patches import Polygon
 import warnings
 
+
 class Drone:
     def __init__(self, test=False, name=None, wind=False, flight_range=[-500, -500, 500, 500]):
         """
@@ -271,10 +272,10 @@ class Plotter:
             self.F_b = np.roll(self.F_b,-1)
             self.tau_b = np.roll(self.tau_b,-1)
             self.t_b[-1]=self.t
-            self.z_b[-1]=z
-            self.y_b[-1]=y
-            self.F_b[-1]=F
-            self.tau_b[-1]=tau
+            self.z_b[-1]=self.z
+            self.y_b[-1]=self.y
+            self.F_b[-1]=self.F
+            self.tau_b[-1]=self.tau
             self.line_z.set_xdata(self.t_b-self.t_b[0])
             self.line_z.set_ydata(self.z_b)
             self.line_y.set_xdata(self.t_b-self.t_b[0])
