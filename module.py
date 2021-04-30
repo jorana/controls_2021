@@ -450,8 +450,8 @@ class Perlin(object):
         # point = float, frequcncy = float
         # int: i0, i1
         # float t0, t1, g0, g1, v0, v1, t
-        my_int = np.vectorize(np.int)
-        my_float = np.vectorize(np.float)
+        my_int = np.vectorize(np.int64)
+        my_float = np.vectorize(np.float64)
         point *= frequency
         i0 = my_int(np.floor(point))
         t0 = my_float(point - i0)
